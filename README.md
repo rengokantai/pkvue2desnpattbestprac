@@ -113,5 +113,10 @@ export default {
       this.$store.dispatch(types.RESET);
     },
   },
+  computed: {
+    count() {
+      return this.$store.getters.count;
+    },
+  },
 }
 ```
