@@ -120,3 +120,25 @@ export default {
   },
 }
 ```
+
+
+
+## Server-Side Rendering with Nuxt
+### Creating a Nuxt project
+```
+vue init nuxt-community/starter-template vue-next
+```
+### Nuxt configuration
+```
+head: {
+  // Omitted
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    {
+      rel: 'stylesheet',
+      href:
+    'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css',
+    },
+  ],
+}
+```
