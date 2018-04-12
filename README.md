@@ -154,3 +154,9 @@ routes:[
   }
 ]
 ```
+### Layouts
+### The Mock REST API
+```
+npm install json-server -g
+json-server --watch db.json --port 3001
+```
