@@ -158,5 +158,30 @@ routes:[
 ### The Mock REST API
 ```
 npm install json-server -g
+```
+
+```
 json-server --watch db.json --port 3001
 ```
+
+
+
+
+### asyncData
+We can use the asyncData method to resolve data for our component before the component is loaded
+```
+import axios from 'axios'
+
+export default {
+  asyncData ({ req, params }) {
+    return axios.get(`http://localhost:3001/categories`)
+      .then((res) => {
+        return {
+          categories: res.data
+        }
+      })
+  },
+}
+```
+
+
